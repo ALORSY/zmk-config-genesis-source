@@ -1,7 +1,7 @@
 if SHIELD_GENESIS_SOURCE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "genesis-source"
+    default "GENESIS_SOURCE"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
