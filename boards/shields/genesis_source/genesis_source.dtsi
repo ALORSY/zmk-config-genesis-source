@@ -5,7 +5,7 @@
 
 #include "genesis_source-layouts.dtsi"
 
-/*
+/* This is the boiler plate given at install. (could be useful.)
 / {
     chosen {
         zmk,physical-layout = &default_layout;
