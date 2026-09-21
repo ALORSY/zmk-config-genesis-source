@@ -7,11 +7,12 @@
 
 / {
     chosen {
-        zmk,physical-layout = &default_layout;
+	zmk,kscan = &default_kscan;
+    //  zmk,physical-layout = &default_layout;
 	zmk,matrix_transform = &default_transform;
     };
 
-    kscan: kscan {
+    default_kscan: kscan {
         // If the hardware does not use a switch matrix, change this to the
         // appropriate driver and update the properties below to match.
         // See https://zmk.dev/docs/config/kscan for supported key scan drivers.
@@ -20,7 +21,8 @@
         // "row2col", change the col-gpios in the _left.overlay and _right.overlay
         // files to (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) and the row-gpios here to
         // GPIO_ACTIVE_HIGH.
-        diode-direction = "col2row";
+        label = "default_kscan";
+	diode-direction = "col2row";
         wakeup-source;
 
         // Replace these comments with the GPIO pins in the matrix.
