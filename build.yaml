@@ -21,6 +21,8 @@
 
 include: 
   - board: nice_nano 
-    shield: genesis_source_left 
+    shield: settings_reset
+#   shield: genesis_source_left 
   - board: nice_nano 
-    shield: genesis_source_right 
+    shield: settings_reset
+#   shield: genesis_source_right 
